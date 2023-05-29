@@ -24,41 +24,44 @@
 </head>
 
 <body>
-  <div class="flex">
-    <div class="top_left_container">
-      <img id="anrovega_logo" src="images/Logo_k@2x.png" alt="Androvega Logo" />
-      <div id="page_1_header">
-        <span>Androvega - <br>The POS system<br>built for fast growing
-        </span>
+  <div id="landing_container">
+    <div class="flex">
+      <div class="top_left_container">
+        <img id="anrovega_logo" src="images/Logo_k@2x.png" alt="Androvega Logo" />
+        <div id="page_1_header">
+          <span>Androvega - <br>The POS system<br>built for fast growing
+          </span>
+        </div>
+        <div id="page_1_text">
+          <span>Whether it’s receiving online orders, managing inventory or
+            tracking your customers and delivery drivers, Androvega’s one stop
+            platform lets you simplify your restaurant management.
+          </span>
+        </div>
+        <div class="input_box">
+          <form>
+            <input type="text" id="name" name="name" placeholder="     NAME">
+            <input type="text" id="email" name="email" placeholder="     EMAIL">
+            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="     PHONE NUMBER">
+            <div id="page_1_button">
+              <button class="button_book_demo">BOOK A DEMO</button>
+            </div>
+          </form>
+        </div>
+
       </div>
-      <div id="page_1_text">
-        <span>Whether it’s receiving online orders, managing inventory or
-          tracking your customers and delivery drivers, Androvega’s one stop
-          platform lets you simplify your restaurant management.
-        </span>
+      <div class="top_right_container">
+        <img id="mask_group_1" src="images/hero.png" alt="mask_group_1" />
       </div>
-      <div class="input_box">
-        <form>
-          <input type="text" id="name" name="name" placeholder="     NAME">
-          <input type="text" id="email" name="email" placeholder="     EMAIL">
-          <input type="text" id="phoneNumber" name="phoneNumber" placeholder="     PHONE NUMBER">
-        </form>
+      <div class="bottom_container">
+        <img id="bottom_container_images" src="images/pizzagarden.png" alt="pizzagarden" />
+        <img id="bottom_container_images" src="images/medpizza.png" alt="medpizza" />
+        <img id="bottom_container_images" src="images/laruota.png" alt="laruota" />
+        <img id="bottom_container_images" src="images/parsley.png" alt="parsley" />
+        <img id="bottom_container_images" src="images/citysquare.png" alt="parsley" />
+        <img id="bottom_container_images" src="images/flamingocafe.png" alt="parsley" />
+        <img id="bottom_container_images" src="images/megabite.png" alt="pizzagarden" />
       </div>
-      <div id="page_1_button">
-        <button class="button_book_demo">BOOK A DEMO</button>
-      </div>
-    </div>
-    <div class="top_right_container">
-      <img id="mask_group_1" src="images/hero.png" alt="mask_group_1" />
-    </div>
-    <div class="bottom_container">
-      <img id="bottom_container_images" src="images/pizzagarden.png" alt="pizzagarden" />
-      <img id="bottom_container_images" src="images/medpizza.png" alt="medpizza" />
-      <img id="bottom_container_images" src="images/laruota.png" alt="laruota" />
-      <img id="bottom_container_images" src="images/parsley.png" alt="parsley" />
-      <img id="bottom_container_images" src="images/citysquare.png" alt="parsley" />
-      <img id="bottom_container_images" src="images/flamingocafe.png" alt="parsley" />
-      <img id="bottom_container_images" src="images/megabite.png" alt="pizzagarden" />
     </div>
 </body>
 <script src="js/scripts.js"></script>
@@ -203,7 +206,13 @@
 
   body {
     padding: 80px;
-    min-height: 100vh;
+
+  }
+
+  #landing_container {
+    display: flex;
+    overflow: visible;
+    justify-content: center;
   }
 
 
@@ -212,8 +221,10 @@
     height: 100%;
     width: 100%;
     flex-flow: row wrap;
-    justify-content: space-around;
-    gap: 10rem;
+    position: relative;
+    gap: 8rem;
+    max-width: 2000px;
+    max-height: 3579px;
 
   }
 
@@ -227,6 +238,8 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 5rem;
+    padding-left: 10rem;
+    padding-right: 3rem;
 
   }
 
@@ -240,7 +253,7 @@
     color: rgba(0, 0, 0, 1);
     letter-spacing: -0.14px;
     max-width: 1000px;
-    overflow: hidden;
+
     white-space: nowrap;
     font-weight: bold;
   }
@@ -249,16 +262,18 @@
     font-size: 28px;
     color: rgba(117, 117, 117, 1);
     letter-spacing: -0.14px;
-    max-width: 1000px;
+    max-width: 700px;
   }
 
   .top_left_container:nth-child(4) {
     height: 50px;
   }
 
-  /*#page_1_button {
+  #page_1_button {
+    display: flex;
+    justify-content: center;
 
-  } */
+  }
 
   .input_box {
     display: flex;
@@ -267,7 +282,7 @@
     background: #342E7F;
     padding-top: 30px;
     padding-right: 15px;
-    padding-bottom: 50px;
+    padding-bottom: 3px;
     padding-left: 15px;
 
   }
@@ -282,7 +297,7 @@
   }
 
   .button_book_demo {
-
+    position: relative;
     background: #819CFF;
     font-family: Inter;
     font-style: normal;
@@ -290,7 +305,7 @@
     height: 40px;
     width: 200px;
     color: #FFFFFF;
-
+    top: 20px
   }
 
   .top_right_container {
