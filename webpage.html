@@ -1,70 +1,68 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>A Basic HTML5 Template</title>
-    <meta
-      name="description"
-      content="A simple HTML5 Template for new projects."
-    />
-    <meta name="author" content="SitePoint" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta property="og:title" content="A Basic HTML5 Template" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://www.sitepoint.com/a-basic-html5-template/"
-    />
-    <meta
-      property="og:description"
-      content="A simple HTML5 Template for new projects."
-    />
-    <meta property="og:image" content="image.png" />
+  <title>A Basic HTML5 Template</title>
+  <meta name="description" content="A simple HTML5 Template for new projects." />
+  <meta name="author" content="SitePoint" />
 
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta property="og:title" content="A Basic HTML5 Template" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/" />
+  <meta property="og:description" content="A simple HTML5 Template for new projects." />
+  <meta property="og:image" content="image.png" />
 
-    <link rel="stylesheet" href="css/styles.css?v=1.0" />
-  </head>
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-  <body>
-    <div class="flex">
-      <div class="top_left">
-        <img
-          id="anrovega_logo"
-          src="images/Logo_k@2x.png"
-          alt="Androvega Logo"
-        />
-        <div id="page_1_header">
-          <span
-            >Androvega - <br />The POS system<br />built for fast growing
-            restaurants</span
-          >
-          <div id="page_1_text">
-            <span
-              >Whether it’s receiving online orders, managing inventory or
-              tracking your customers and delivery drivers, Androvega’s one stop
-              platform lets you simplify your restaurant management.
-            </span>
-          </div>
-          <div id="BTN">
-            <button type="button">BOOK A DEMO</button>
-          </div>
-        </div>
+  <link rel="stylesheet" href="css/styles.css?v=1.0" />
+</head>
+
+<body>
+  <div class="flex">
+    <div class="top_left_container">
+      <img id="anrovega_logo" src="images/Logo_k@2x.png" alt="Androvega Logo" />
+      <div id="page_1_header">
+        <span>Androvega - <br>The POS system<br>built for fast growing
+        </span>
       </div>
-      <img
-        class="top_right"
-        id="mask_group_1"
-        src="images/hero.png"
-        alt="mask_group_1"
-      />
+      <div id="page_1_text">
+        <span>Whether it’s receiving online orders, managing inventory or
+          tracking your customers and delivery drivers, Androvega’s one stop
+          platform lets you simplify your restaurant management.
+        </span>
+      </div>
+      <div class="input_box">
+        <form>
+          <input type="text" id="name" name="name" placeholder="     NAME">
+          <input type="text" id="email" name="email" placeholder="     EMAIL">
+          <input type="text" id="phoneNumber" name="phoneNumber" placeholder="     PHONE NUMBER">
+        </form>
+      </div>
+      <div id="page_1_button">
+        <button class="button_book_demo">BOOK A DEMO</button>
+      </div>
     </div>
-  </body>
-  <script src="js/scripts.js"></script>
+    <div class="top_right_container">
+      <img id="mask_group_1" src="images/hero.png" alt="mask_group_1" />
+    </div>
+    <div class="bottom_container">
+      <img id="bottom_container_images" src="images/pizzagarden.png" alt="pizzagarden" />
+      <img id="bottom_container_images" src="images/medpizza.png" alt="medpizza" />
+      <img id="bottom_container_images" src="images/laruota.png" alt="laruota" />
+      <img id="bottom_container_images" src="images/parsley.png" alt="parsley" />
+      <img id="bottom_container_images" src="images/citysquare.png" alt="parsley" />
+      <img id="bottom_container_images" src="images/flamingocafe.png" alt="parsley" />
+      <img id="bottom_container_images" src="images/megabite.png" alt="pizzagarden" />
+    </div>
+</body>
+<script src="js/scripts.js"></script>
+
 </html>
 <style>
   /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -160,6 +158,7 @@
     font: inherit;
     vertical-align: baseline;
   }
+
   /* HTML5 display-role reset for older browserssads */
   article,
   aside,
@@ -174,17 +173,21 @@
   section {
     display: block;
   }
+
   body {
     line-height: 1;
   }
+
   ol,
   ul {
     list-style: none;
   }
+
   blockquote,
   q {
     quotes: none;
   }
+
   blockquote:before,
   blockquote:after,
   q:before,
@@ -192,71 +195,200 @@
     content: "";
     content: none;
   }
+
   table {
     border-collapse: collapse;
     border-spacing: 0;
   }
 
-  #page_1_header {
-    left: 0px;
-    top: 100px;
-    position: relative;
-    overflow: visible;
-    width: 777px;
-    height: 337px;
-    text-align: left;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 65px;
-    color: rgba(0, 0, 0, 1);
-    letter-spacing: -0.14px;
+  body {
+    padding: 80px;
+    min-height: 100vh;
   }
+
 
   .flex {
     display: flex;
+    height: 100%;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 10rem;
+
   }
 
-  #page_1_text {
-    left: 0px;
-    top: 100px;
-    position: relative;
-    overflow: visible;
-    width: 724px;
-    height: 180px;
-    line-height: 42px;
-    margin-top: -7px;
-    text-align: left;
+  .top_left_container {
+    display: flex;
+    order: 1;
     font-family: Inter;
     font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
-    color: rgba(117, 117, 117, 1);
-    letter-spacing: -0.14px;
-  }
 
-  #BTN {
-    left: 0px;
-    top: 100px;
-    position: relative;
-    overflow: visible;
-    width: 260px;
-    height: 78px;
-    padding: 27px 60px 27px 60px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5rem;
+
   }
 
   #anrovega_logo {
-    position: relative;
-    overflow: visible;
     width: 349px;
     height: 65px;
-    left: 0px;
-    top: 0px;
+  }
+
+  #page_1_header {
+    font-size: 65px;
+    color: rgba(0, 0, 0, 1);
+    letter-spacing: -0.14px;
+    max-width: 1000px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+
+  #page_1_text {
+    font-size: 28px;
+    color: rgba(117, 117, 117, 1);
+    letter-spacing: -0.14px;
+    max-width: 1000px;
+  }
+
+  .top_left_container:nth-child(4) {
+    height: 50px;
+  }
+
+  /*#page_1_button {
+
+  } */
+
+  .input_box {
+    display: flex;
+    align-content: center;
+    border-radius: 25px;
+    background: #342E7F;
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+
+  }
+
+
+  input[type=text] {
+
+    border-radius: 5px;
+    height: 40px;
+
+
+  }
+
+  .button_book_demo {
+
+    background: #819CFF;
+    font-family: Inter;
+    font-style: normal;
+    border-radius: 75px;
+    height: 40px;
+    width: 200px;
+    color: #FFFFFF;
+
+  }
+
+  .top_right_container {
+    order: 2;
+    display: flex;
   }
 
   #mask_group_1 {
-    height: 300px;
-    width: 500px;
-    object-fit: cover;
+    height: 400px;
+    width: 561px;
+
+  }
+
+  #bottom_container_images {
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    /* need a relative size for image*/
+  }
+
+  .flex:nth-child(3) {
+    order: 3;
+  }
+
+  .bottom_container {
+    display: flex;
+
+    order: 3;
+    width: 100%;
+    background: #342E7F;
+    justify-content: space-around;
+
+
   }
 </style>
+
+<!-- 
+<button class="button-20" role="button">Button 20</button>
+
+/* CSS */
+.button-20 {
+  appearance: button;
+  background-color: #4D4AE8;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
+  border: 1px solid #4D4AE8;
+  border-radius: 1rem;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,rgba(46, 54, 80, 0.075) 0 1px 1px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+  padding: .5rem 1rem;
+  text-align: center;
+  text-transform: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-20:focus:not(:focus-visible),
+.button-20:focus {
+  outline: 0;
+}
+
+.button-20:hover {
+  background-color: #3733E5;
+  border-color: #3733E5;
+}
+
+.button-20:focus {
+  background-color: #413FC5;
+  border-color: #3E3BBA;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset, rgba(46, 54, 80, 0.075) 0 1px 1px, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
+}
+
+.button-20:active {
+  background-color: #3E3BBA;
+  background-image: none;
+  border-color: #3A38AE;
+  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset;
+}
+
+.button-20:active:focus {
+  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
+}
+
+.button-20:disabled {
+  background-image: none;
+  box-shadow: none;
+  opacity: .65;
+  pointer-events: none;
+}
+->
