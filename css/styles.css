@@ -1,0 +1,335 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+          v2.0 | 20110126
+          License: none (public domain)
+        */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browserssads */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+#landing_container {
+  display: flex;
+  overflow: visible;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-flow: row wrap;
+  position: relative;
+  gap: 8rem;
+  max-width: 2000px;
+  max-height: 3579px;
+}
+
+.top_left_container {
+  display: flex;
+  order: 1;
+
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5rem;
+  padding-left: 10rem;
+  padding-right: 3rem;
+}
+
+#page_1_button {
+  display: flex;
+  justify-content: center;
+}
+
+.input_box {
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+
+  border-radius: 20px;
+  background: #342e7f;
+  padding-top: 20px;
+  padding-bottom: 3px;
+}
+
+input[type="text"] {
+  border-radius: 3px;
+  height: 30px;
+  border: none;
+  font-size: 0.5em;
+  width: 31%;
+  color: #707070;
+}
+
+.button_book_demo {
+  position: relative;
+  background: linear-gradient(#819cff, #7e51ff);
+  font-family: Inter;
+  font-weight: 550;
+  border-radius: 75px;
+  height: 40px;
+  width: 200px;
+  color: #ffffff;
+  top: 20px;
+  border: none;
+}
+
+.top_right_container {
+  order: 2;
+  display: flex;
+}
+
+#mask_group_1 {
+  height: 400px;
+  width: 561px;
+}
+
+#bottom_container_images {
+  padding-top: 30px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  width: auto;
+  height: 75px;
+  /* need a relative size for image*/
+}
+
+.flex:nth-child(3) {
+  order: 3;
+}
+
+.bottom_container {
+  display: flex;
+  order: 3;
+  width: 100%;
+  background: #342e7f;
+  justify-content: space-around;
+}
+
+.safe-area {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main {
+  display: grid;
+  position: relative;
+  gap: 40px;
+  top: 50px;
+
+  grid-template-columns: 1fr 1fr;
+}
+.main .gi {
+  height: 600px;
+  width: 500px;
+}
+.main .left.gi img {
+  width: 250px;
+
+  position: relative;
+}
+
+.main .left.gi h3 {
+  font-size: 3em;
+  font-weight: 550;
+  position: relative;
+  margin-top: 30px;
+}
+
+.main .left.gi p {
+  font-size: 1em;
+  font-weight: 400;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #757575;
+  line-height: 2;
+}
+
+.main .right.gi {
+  overflow-y: hidden;
+}
+.main .right.gi img {
+  position: absolute;
+  top: -150px;
+  height: 650px;
+
+}
+.main .left.gi h3 span {
+  background: -webkit-linear-gradient(left, #ed1ce6, #649dff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.news1 {
+  display: grid;
+  position: relative;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  background: #f5f4ff;
+  border-radius: 20px;
+}
+.news1 .gi {
+  height: 500px;
+}
+.news1 .left.gi {
+  overflow-y: hidden;
+}
+.news1 .left.gi img {
+  position: absolute;
+  top: -50px;
+  left: -280px;
+  height: 500px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .safe-area {
+    width: 800px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .safe-area {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .safe-area {
+    width: calc(100% - 20px);
+    margin: 10px auto;
+  }
+}
